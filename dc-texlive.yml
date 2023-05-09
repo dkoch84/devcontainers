@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: texlive
+  name: texlive
+  namespace: devcontainers
+spec:
+  containers:
+  - image: ghcr.io/dkoch84/dc-texlive-arm:20230509.1
+    name: texlive
+    command: [ "sleep", "infinity" ]
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
