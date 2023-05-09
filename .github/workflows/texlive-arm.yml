@@ -1,11 +1,11 @@
 name: Docker for texlive-arm
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'texlive-arm/**'
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'texlive-arm/**'
   workflow_dispatch:
